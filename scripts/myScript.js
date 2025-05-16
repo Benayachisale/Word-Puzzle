@@ -60,7 +60,28 @@ function generateButtons(){
     })
   })
 }
+// Update the progress display
+function updateProgress() {
+  const totalWords = data[db.level].words.length;
+  const foundWords = db.answered.length;
+  const progressPercent = Math.round((foundWords / totalWords) * 100);
 
+  // Update progress bar
+  const progressBar = document.getElementById('wordProgress');
+  progressBar.style.width = `${progressPercent}%`;
+  
+  // Update text counters
+  document.getElementById('progressCount').textContent = foundWords;
+  document.getElementById('totalWords').textContent = totalWords;
+
+  // Change color based on completion
+  progressBar.className = `progress-bar progress-bar-striped ${
+    progressPercent >= 70 ? 'bg-success' : 
+    progressPercent >= 30 ? 'bg-info' : 'bg-warning'
+  }`;
+}
+
+updateProgress();
 function checkAnswer() {
   const answer = GAME.answer.toLowerCase();
   
@@ -99,7 +120,8 @@ function checkAnswer() {
         }
         
         db.answered.push(answer);
-        
+        updateProgress()
+        showCorrectedWords()
         // Level progression logic...
         updateDatabase();
       } else {
@@ -132,6 +154,7 @@ function showCorrectedWords(){
     wordDiv.appendChild(btn);
   })
   loadDashboard()
+  updateProgress()
 }
 
 
@@ -240,7 +263,7 @@ const body = document.body;
 function initTheme() {
   const savedTheme = db.theme || 'light';
   setTheme(savedTheme);
-  
+  updateProgress()
 }
 
 // Set theme (light/dark)
@@ -262,7 +285,7 @@ function setTheme(theme) {
         document.querySelectorAll('small').forEach((small)=>{
       small.style.color="white"
     })
-
+updateProgress()
   }
 }
 
