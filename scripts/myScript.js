@@ -125,7 +125,7 @@ function showCorrectedWords(){
   wordDiv.innerHTML=""
   db.answered.forEach((answer)=>{
       const btn=document.createElement('button');
-    btn.className="bold btn btn-lg emboss border-0 m-1 text-white rounded";
+    btn.className="text-uppercase bold btn btn-lg emboss border-0 m-1 text-white rounded";
     btn.textContent=answer;
     btn.style.fontFamily="bold"
     btn.style.backgroundColor=`rgb(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)})`
