@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORDS BUILDER - The Ultimate Word Puzzle Challenge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+          <link rel="stylesheet" href="styles/style.css"/>
+
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold mb-4 bold">WORD BUILDER</h1>
+        <p class="fs-6 m-3">Created with passion by<span class="text-uppercase
+        bold"> Benaya Chisale</span></p>
+
+                    <h2 class="display-5 mb-4 d-none">The Most Addictive Word Puzzle Game of 2024!</h2>
+                    <p class="f6-5 mb-5">Unleash your vocabulary power! Combine letters, build words, and conquer levels in this brain-teasing adventure that's captivating players worldwide.</p>
+                    <a href="#play-now" class="bold btn btn-success btn-lg px-5 py-3 me-3">PLAY NOW</a>
+                    <a href="#how-to-play" class="bold btn btn-outline-light btn-lg px-5 py-3">HOW TO PLAY</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="game-preview shadow-lg">
+                        <div class="game-board-preview">
+                            <div class="letter-tile">W</div>
+                            <div class="letter-tile">O</div>
+                            <div class="letter-tile">R</div>
+                            <div class="letter-tile">D</div>
+                            <div class="letter-tile">S</div>
+                            <div class="letter-tile">B</div>
+                            <div class="letter-tile">U</div>
+                            <div class="letter-tile">I</div>
+                            <div class="letter-tile">L</div>
+                            <div class="letter-tile">D</div>
+                            <div class="letter-tile">E</div>
+                            <div class="letter-tile">R</div>
+                        </div>
+                        <div class="game-words-preview">
+                            <span class="badge bg-success">WORD</span>
+                            <span class="badge bg-success">BUILD</span>
+                            <span class="badge bg-success">SOIL</span>
+                            <span class="badge bg-success">BIRD</span>
+                            <span class="badge bg-warning text-dark">+12 more</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card p-4 text-center">
+                        <i class="bi bi-lightbulb feature-icon"></i>
+                        <h3 class="bold text-uppercase my-3">Brain Boosting</h3>
+                        <p>Sharpen your mind with our scientifically designed puzzles that enhance memory and cognitive skills.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card p-4 text-center">
+                        <i class="bi bi-infinity feature-icon"></i>
+                        <h3 class="bold text-uppercase my-3">Endless Fun</h3>
+                        <p>With procedurally generated puzzles, you'll never play the same game twice!</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-none">
+                    <div class="feature-card p-4 text-center">
+                        <i class="bi bi-trophy feature-icon"></i>
+                        <h3 class="bold text-uppercase my-3">Global Leaderboards</h3>
+                        <p>Compete with players worldwide and claim your spot at the top!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Play Section -->
+    <section id="how-to-play" class="how-to-play-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-1">How To Play</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="step-card text-center p-4">
+                        <div class="step-number">1</div>
+                        <h4 class="bold text-uppercase my-3">Select Letters</h4>
+                        <p>Tap or click on adjacent letters to build your word</p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="step-card text-center p-4">
+                        <div class="step-number">2</div>
+                        <h4 class="bold text-uppercase my-3">Form Words</h4>
+                        <p>Create valid English words of 3 letters or more</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="step-card text-center p-4">
+                        <div class="step-number">3</div>
+                        <h4 class="text-uppercase bold my-3">Score Points</h4>
+                        <p>Longer words earn more points and bonuses</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="step-card text-center p-4">
+                        <div class="step-number">4</div>
+                        <h4 class="bold text-uppercase my-3">Level Up</h4>
+                        <p>Complete word challenges to unlock new levels</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Play Now Section -->
+    <section id="play-now" class="play-now-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="play-form p-5 text-center">
+                        <h2 class="bold text-uppercase mb-4">Ready to Challenge Your Vocabulary?</h2>
+                        <p class="d-none lead mb-5">Enter your name to begin your word-building journey!</p>
+                        
+                  
+                            <div class="mb-4">
+     <input type="text" class="form-control
+        form-control-lg"
+      placeholder="Enter Your Fullname" id="name" required>
+       <div class="container m-2" id="feedback">
+           Please enter your name to continue.
+         </div>
+                            </div>
+                            <button type="button" class="btn btn-success bold
+                            btn-lg px-5 py-3" id="btn">CONTINUE TO GAME</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p class="mb-2">© 2024 WORD BUILDER. All rights reserved.</p>
+            <a class="alert alert-info text-info m-5 " href="cv.html">Created with passion by
+            Benaya Chisale</a>
+        </div>
+    </footer>
+</body>
+<script>
+  const db=JSON.parse(localStorage.getItem('database'))||{
+  name:null,
+  level:0,
+  points:0,
+  answered:[],
+  visited:false
+}
+
+    const nameInput = document.getElementById('name');
+    const submitButton = document.getElementById('btn');
+    const feedbackDiv = document.getElementById('feedback');
+    const form = document.querySelector('form');
+
+    // Validation function
+    function validateName(name) {
+      // Regex to check for only letters (including international) and spaces
+      const nameRegex = /^[a-zA-Z\u00C0-\u017F\s]{4,16}$/;
+      
+      // Check length first
+      if (name.length < 4) {
+        return { isValid: false, message: 'Name must be at least 4 characters long' };
+      }
+      
+      if (name.length > 16) {
+        return { isValid: false, message: 'Name must be no more than 16 characters' };
+      }
+      
+      // Check for invalid characters
+      if (!nameRegex.test(name)) {
+        return { isValid: false, message: 'Name can only contain letters and spaces' };
+      }
+      
+      return { isValid: true, message: '' };
+    }
+
+    // Form submission handler
+    submitButton.addEventListener('click', function() {
+      
+      feedbackDiv.innerHTML = ''; // Clear previous messages
+      
+      const nameValue = nameInput.value.trim();
+      const validation = validateName(nameValue);
+      
+      if (!validation.isValid) {
+        // Show error message
+        feedbackDiv.innerHTML = `
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            ${validation.message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        `;
+        nameInput.focus();
+        return;
+      }
+      
+      // If valid, redirect to game page
+       db.name=nameValue;
+       db.visited=true;
+      localStorage.setItem('database',JSON.stringify(db))
+      window.location.href = 'index.html';
+    });
+
+    // Real-time validation as user types
+    nameInput.addEventListener('input', function() {
+      const nameValue = nameInput.value.trim();
+      
+      if (nameValue.length === 0) {
+        feedbackDiv.innerHTML = '';
+        return;
+      }
+      
+      // Check for invalid characters as user types
+      const invalidCharRegex = /[^a-zA-Z\u00C0-\u017F\s]/;
+      if (invalidCharRegex.test(nameValue)) {
+        feedbackDiv.innerHTML = `
+          <div class="alert alert-warning alert-dismissible fade show mb-2" role="alert">
+            Name can only contain letters and spaces
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        `;
+      } else if (nameValue.length > 16) {
+        feedbackDiv.innerHTML = `
+          <div class="alert alert-warning alert-dismissible fade show mb-2" role="alert">
+            Maximum 16 characters allowed
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        `;
+      } else {
+        feedbackDiv.innerHTML = '';
+      }
+    });
+  
+</script></html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benaya Chisale - Full Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="styles/style.css"/>
+
+    <style>
+        .cv-header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .section-title {
+            color: #2575fc;
+            border-bottom: 2px solid #2575fc;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .skill-badge {
+            margin: 5px;
+            padding: 8px 15px;
+            font-size: 0.9rem;
+        }
+        .hire-me {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .hire-me:hover {
+            transform: translateY(-5px);
+        }
+        .contact-icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+            color: #2575fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mb-5">
+        <!-- Header Section -->
+        <header class="cv-header text-center p-5 mb-5">
+            <div class="container">
+                <img src="assets/bc.jpg" alt="Benaya Chisale" class="profile-img rounded-circle mb-4">
+                <h1 class="display-4 bold text-uppercase mb-3">Benaya Chisale</h1>
+                <p class="lead mb-4">Full Stack Web Developer</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <span class="badge bg-light text-dark fs-6">JavaScript</span>
+                    <span class="badge bg-light text-dark fs-6">Python</span>
+                    <span class="badge bg-light text-dark fs-6">PHP</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-lg-8 pe-lg-5">
+                <!-- About Section -->
+                <section class="mb-5">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="lead">I am a passionate Full Stack Developer from Thyolo, Malawi, born on 9 January  , with expertise in building modern web applications.</p>
+                    <p>I specialize in JavaScript development across the entire stack, from creating interactive front-end interfaces to building robust back-end systems. My diverse skill set allows me to handle all aspects of web development, ensuring seamless, high-performance applications.</p>
+                </section>
+
+                <!-- Skills Section -->
+                <section class="mb-5">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="mb-4">
+                        <h5 class="bold text-uppercase mb-3">Frontend Development</h5>
+                        <div>
+                            <span class="badge bg-primary skill-badge">JavaScript</span>
+                            <span class="badge bg-primary skill-badge">React</span>
+                            <span class="badge bg-primary skill-badge">HTML5</span>
+                            <span class="badge bg-primary skill-badge">CSS3</span>
+                            <span class="badge bg-primary skill-badge">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="bold text-uppercase mb-3">Backend Development</h5>
+                        <div>
+                            <span class="badge bg-success skill-badge">Node.js</span>
+                            <span class="badge bg-success skill-badge">Express</span>
+                            <span class="badge bg-success skill-badge">Python</span>
+                            <span class="badge bg-success skill-badge">PHP</span>
+                            <span class="badge bg-success skill-badge">REST APIs</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 class="bold text-uppercase mb-3">Database & Tools</h5>
+                        <div>
+                            <span class="badge bg-info text-dark skill-badge">MongoDB</span>
+                            <span class="badge bg-info text-dark skill-badge">MySQL</span>
+                            <span class="badge bg-info text-dark skill-badge">Git</span>
+                            <span class="badge bg-info text-dark skill-badge">Docker</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-4">
+                <!-- Hire Me Card -->
+                <section class="hire-me p-4 mb-5">
+                    <h3 class="text-center mb-4 bold text-uppercase">Available for Hire!</h3>
+                    <p class="text-center mb-4">I'm currently available for web development projects. Let's build something amazing together!</p>
+                    <div class="d-grid gap-2">
+                        <a href="tel:+265992605260" class="btn btn-primary btn-lg">
+                            <i class="bi bi-telephone contact-icon"></i> Call Me
+                        </a>
+                        <a href="mailto:chisalebenaya@gmail.com" class="btn btn-outline-primary btn-lg">
+                            <i class="bi bi-envelope contact-icon"></i> Email Me
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Personal Info -->
+                <section class="mb-5">
+                    <h2 class="section-title">Personal Info</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <strong>Date of Birth:</strong> 9 January  
+                        </li>
+                        <li class="mb-3">
+                            <strong>Location:</strong> Thyolo, Malawi
+                        </li>
+                        <li class="mb-3">
+                            <strong>Phone:</strong> +265 992605260
+                        </li>
+                        <li class="mb-3">
+                            <strong>Email:</strong> chisalebenaya@gmail.com
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Testimonial -->
+                <section class="bg-light p-4 rounded">
+                    <blockquote class="blockquote">
+                        <p>"A great developer combines technical skills with creative problem-solving."</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer text-end">
+                        Industry Wisdom
+                    </figcaption>
+                </section>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="bg-primary text-white p-5 rounded-3 text-center">
+                    <h2 class="display-5 bold text-uppercase mb-4">Ready to Start Your Project?</h2>
+                    <p class="lead mb-4">I can help you build a modern, responsive, and high-performance website or web application.</p>
+                    <a href="mailto:chisalebenaya@gmail.com" class="btn btn-light btn-lg px-5">Hire Me Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</body>
+</html>
