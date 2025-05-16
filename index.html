@@ -30,6 +30,16 @@
     <small class="text-muted">
       click the following buttons to create words
     </small>
+    <div class="container mt-3 mb-3">
+  <div class="d-flex justify-content-between">
+    <small>Progress</small>
+    <small><span id="progressCount">0</span>/<span id="totalWords">0</span> words</small>
+  </div>
+  <div class="progress" style="height: 20px;">
+    <div id="wordProgress" class="progress-bar progress-bar-striped bg-success" 
+         role="progressbar" style="width: 0%"></div>
+  </div>
+    </div>
     <!--Buttons here-->
     <div id="letters">
       <button class="bold letter bg-dark border-0 emboss m-2 text-white">A</button>
